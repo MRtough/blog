@@ -1,4 +1,4 @@
-package com.blog.demo.controller;
+﻿package com.blog.demo.controller;
 
 import java.io.File;
 import java.io.IOException;
@@ -86,7 +86,7 @@ public class UserController {
 			int numback1=u_rolemapper.insert(list);
 		}else if (userrole.equals("普通用户")) {
 			List<UserRole> list=new ArrayList<UserRole>();
-			list.add(new UserRole(userId, 1));
+			list.add(new UserRole(userId, 2));
 			int numback1=u_rolemapper.insert(list);
 		}else {
 			System.out.println("角色插入错误！");
